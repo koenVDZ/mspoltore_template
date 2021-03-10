@@ -455,7 +455,7 @@ class Wright
 
 		$styles['template'][] = 'joomla' . $this->_baseVersion . '-' . $this->_selectedStyle . '-responsive.css';
 
-		$styles['wrighttemplatecss'][] = 'font-awesome.min.css';
+		// $styles['wrighttemplatecss'][] = 'font-awesome.min.css';
 
 		if (version_compare(JVERSION, '3.0', 'ge'))
 		{

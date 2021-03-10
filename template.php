@@ -19,6 +19,7 @@ defined('_JEXEC') or die('Restricted access');
 <html>
     <head>
         <w:head />
+        <script src="https://kit.fontawesome.com/1719122f87.js" crossorigin="anonymous"></script>
     </head>
     <body class="<?php   echo $responsive . $fixedClass . $sidebarClass?>">
         <header id="header" class="relative spacing-bottom">
