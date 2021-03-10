@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="template" method="upgrade" client="site">
+	<name>js_wylia2</name>
+	<creationDate>November 26 2020</creationDate>
+	<author>Joomlashack</author>
+	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>https://www.joomlashack.com</authorUrl>
+	<copyright>Copyright Joomlashack 2020. All rights reserved</copyright>
+	<license>GNU GPLv2</license>
+	<version>2.2.17</version>
+	<description>TPL_JS_WYLIA2_XML_DESCRIPTION</description>
+
+	<languages folder="language">
+		<!-- en-GB -->
+		<language tag="en-GB">en-GB/en-GB.tpl_js_wylia2.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_wylia2.sys.ini</language>
+		<!-- es-ES -->
+		<language tag="es-ES">es-ES/es-ES.tpl_js_wylia2.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_wylia2.sys.ini</language>
+	</languages>
+
+	<files>
+		<filename>component.php</filename>
+		<filename>render.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>functions.php</filename>
+		<filename>wrighttemplate.php</filename>
+		<filename>index.php</filename>
+		<filename>template.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>less</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>wright</folder>
+		<folder>library</folder>
+        <folder>views</folder>
+        <folder>form</folder>
+	</files>
+
+	<positions>
+		<position>above-content</position>
+		<position>below-content</position>
+		<position>bottom-menu</position>
+		<position>breadcrumbs</position>
+		<position>debug</position>
+		<position>featured</position>
+		<position>footer</position>
+		<position>grid-bottom2</position>
+		<position>grid-bottom3</position>
+		<position>grid-bottom</position>
+		<position>grid-top2</position>
+		<position>grid-top3</position>
+		<position>grid-top</position>
+		<position>logo</position>
+		<position>menu</position>
+		<position>sidebar1</position>
+		<position>sidebar2</position>
+		<position>toolbar</position>
+		<position>top</position>
+        <position>extra</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/templates/js_wylia2/wright/parameters/joomla_3.0">
+			<fieldset name="basic">
+                <!-- Start of default Wright params -->
+				<field name="rebrand" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC">
+				    <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+ 				</field>
+ 				<field name="style" type="styles" default="popstyle" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
+ 				<field name="styleVariation" type="list" default="modern" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_DESC" showon="style:custom">
+ 				    <option value="modern">TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_MODERN</option>
+ 				    <option value="classic">TPL_JS_WRIGHT_FIELD_STYLE_VARIATION_CLASSIC</option>
+ 				</field>
+ 				<field name="color_six" type="color" default="#f9e663" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SIX_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SIX_DESC" showon="style:custom" />
+ 				<field name="color_seven" type="color" default="#189F85" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SEVEN_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SEVEN_DESC" showon="style:custom" />
+ 				<field name="compileCss" type="compilecss" showon="style:custom"/>
+ 				<field name="modal" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="javascriptBottom" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM" description="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="logo" type="logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
+				<field name="logowidth" type="grid" default="2" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
+				<field name="body_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
+				<field name="header_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
+				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
+				<field name="documentationMode" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_WRIGHT_DOCUMENTATION_MODE" description="TPL_JS_WRIGHT_DOCUMENTATION_MODE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="bootstrapspacer" label="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_LABEL" description="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_DESC" type="spacer" />
+				<field name="bs_rowmode" type="radio" class="btn-group btn-group-yesno" default="row" label="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_LABEL" description="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DESC">
+					<option value="row-fluid">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_FLUID</option>
+					<option value="row">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DEFAULT</option>
+				</field>
+				<field name="stickyFooter" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER" description="TPL_JS_WRIGHT_FIELD_STICKY_FOOTER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="wright_bootstrap_images" type="radio" class="btn-group btn-group-yesno" default="" label="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES" description="TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_DESC">
+					<option value="">TPL_JS_WRIGHT_NONE</option>
+					<option value="img-rounded">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_ROUNDED</option>
+					<option value="img-circle">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_CIRCLE</option>
+					<option value="img-polaroid">TPL_JS_WRIGHT_BOOTSTRAP_IMAGES_POLAROID</option>
+				</field>
+				<field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
+				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
+                <!-- End of default Wright params -->
+            </fieldset>
+            <fieldset name="footer" addfieldpath="/templates/js_wylia2/form/fields">
+                <field
+                    type="customfooter"
+                    name="customfooter"
+                    media="tpl_js_wylia2" />
+            </fieldset>
+		</fields>
+	</config>
+
+	<media destination="tpl_js_wylia2" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </media>
+
+    <scriptfile>script.installer.php</scriptfile>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Wylia2"><![CDATA[https://deploy.ostraining.com/client/update/pro/stable/tpl_js_wylia2]]></server>
+    </updateservers>
+
+    <variant>PRO</variant>
+
+    <alledia>
+        <element>tpl_js_wylia2</element>
+        <namespace>JS_Wylia2</namespace>
+        <name>JS Wylia2</name>
+        <license>pro</license>
+        <targetplatform>3.*</targetplatform>
+
+        <relatedExtensions>
+            <extension
+                type="library"
+                element="allediaframework">AllediaFramework</extension>
+
+            <extension
+                type="plugin"
+                group="system"
+                element="ossystem"
+                publish="true"
+                ordering="first">OSSystem</extension>
+
+            <extension
+                type="plugin"
+                group="system"
+                element="osmylicensesmanager"
+                publish="true"
+                ordering="last">OSMyLicensesManager</extension>
+        </relatedExtensions>
+
+        <include>AllediaFreeDefaultFiles</include>
+    </alledia>
+</extension>
