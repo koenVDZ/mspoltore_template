@@ -152,7 +152,7 @@ h2, h3 {
 }
 }body {
   margin: 0;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
@@ -768,7 +768,7 @@ label, input, button, select, textarea {
   line-height: 20px;
 }
 input, button, select, textarea {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 label {
   display: block;

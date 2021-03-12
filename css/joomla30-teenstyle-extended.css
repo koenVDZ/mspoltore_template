@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@500&family=Tajawal:wght@200;300;400;700&display=swap');
-  .clearfix {
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@500&family=Montserrat:wght@200;300;400;500;700&display=swap');  .clearfix {
   *zoom: 1;
 }
 .clearfix:before, .clearfix:after {
@@ -1096,7 +1095,7 @@ dl.article-info dd {
 }
 h1 cite, h2 cite, h3 cite, h4 cite, h5 cite, h6 cite {
   color: #816170;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
   font-style: italic;
   text-transform: none;
 }
@@ -1217,8 +1216,8 @@ dl.article-info .article-info-term {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #2a2c31;
-  border-bottom-color: #2a2c31;
+  border: 1px solid #9F7487;
+  border-bottom-color: #9F7487;
   background-color: #46353D;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1483,7 +1482,7 @@ div.img-peak-bottom:before {
 }
 .item-page>h1 {
   border-bottom: 1px solid #ddd;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
   font-size: 35px;
   font-weight: normal;
   margin-top: 5px;
@@ -1496,7 +1495,7 @@ div.img-peak-bottom:before {
   border-top: 2px solid #62b7bc;
   background-color: #46353D;
   color: #f0f0e0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
   font-size: 14px;
   padding: 30px 20px 20px;
 }
@@ -1508,7 +1507,7 @@ div.img-peak-bottom:before {
 }
 ._article .slideTitle h1, ._article .slideTitle h2, ._article .slideTitle h3, ._article .slideTitle h4, ._article .slideTitle h5, ._article .slideTitle h6 {
   color: #62b7bc;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 ._article .slideTitle a {
   color: #62b7bc;
@@ -1609,7 +1608,7 @@ div.img-peak-bottom:before {
   padding: 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 [class*="module"]>h1 span, [class*="module"]>h2 span, [class*="module"]>h3 span, [class*="module"]>h4 span, [class*="module"]>h5 span, [class*="module"]>h6 span {
   font-weight: normal;
@@ -1713,7 +1712,7 @@ div.img-peak-bottom:before {
   padding: 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 .page-header h1 span, .page-header h2 span, .page-header h3 span, .page-header h4 span, .page-header h5 span, .page-header h6 span {
   font-weight: normal;
@@ -2089,7 +2088,7 @@ div .slideTitle {
   border-top: 2px solid #62b7bc;
   background-color: #46353D;
   color: #f0f0e0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
   font-size: 14px;
   padding: 20px;
 }
@@ -2101,7 +2100,7 @@ div .slideTitle cite {
 }
 div .slideTitle h1, div .slideTitle h2, div .slideTitle h3, div .slideTitle h4, div .slideTitle h5, div .slideTitle h6 {
   color: #62b7bc;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 div .slideTitle a:not(.btn) {
   color: #62b7bc;
@@ -2915,7 +2914,7 @@ h1[id^="hikashop_"] {
   padding: 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 h1[id^="hikashop_"] span {
   font-weight: normal;
@@ -2929,7 +2928,7 @@ h1[id^="hikashop_"] span {
   padding: 0;
   margin: 0 0 20px 0;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
 }
 [id^="hikashop_"] h1 span, [id^="hikashop_"] h2 span, [id^="hikashop_"] h3 span, [id^="hikashop_"] h4 span, [id^="hikashop_"] h5 span, [id^="hikashop_"] h6 span, [id^="hikashop_"] legend span {
   font-weight: normal;
