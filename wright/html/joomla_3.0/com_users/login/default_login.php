@@ -34,28 +34,36 @@ JHtml::_('behavior.formvalidator');
 		</div>
 	<?php endif; ?>
 	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal well">
-		<fieldset>
-			<?php echo $this->form->renderFieldset('credentials'); ?>
-			<?php if ($this->tfa) : ?>
-				<?php echo $this->form->renderField('secretkey'); ?>
-			<?php endif; ?>
-			<?php if (JPluginHelper::isEnabled('system', 'remember')) : ?>
-				<div class="control-group">
-					<div class="control-label">
-						<label for="remember">
-							<?php echo JText::_('COM_USERS_LOGIN_REMEMBER_ME'); ?>
-						</label>
-					</div>
-					<div class="controls">
-						<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes" />
-					</div>
+		<fieldset class="logon-container">
+			<div class="logon-container-item-1">
+				<div class="logon-sub-container-1">
+						<?php echo $this->form->renderFieldset('credentials'); ?>
+					<?php if ($this->tfa) : ?>
+						<?php echo $this->form->renderField('secretkey'); ?>
+					<?php endif; ?>
+					<?php if (JPluginHelper::isEnabled('system', 'remember')) : ?>
+						<div class="control-group">
+							<div class="control-label">
+								<label for="remember">
+									<?php echo JText::_('COM_USERS_LOGIN_REMEMBER_ME'); ?>
+								</label>
+							</div>
+							<div class="controls">
+								<input id="remember" type="checkbox" name="remember" class="inputbox" value="yes" />
+							</div>
+						</div>
+					<?php endif; ?>
 				</div>
-			<?php endif; ?>
-			<div class="control-group">
-				<div class="controls">
-					<button type="submit" class="btn btn-primary">
-						<?php echo JText::_('JLOGIN'); ?>
-					</button>
+			</div>
+			<div class="logon-container-item-2">
+				<div class="logon-sub-container-2">
+					<div class="control-group">
+						<div class="logon-btns">
+							<button type="submit" class="btn btn-primary"><i class="fab fa-joomla"></i>
+								<?php echo JText::_('JLOGIN'); ?>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<?php $return = $this->form->getValue('return', '', $this->params->get('login_redirect_url', $this->params->get('login_redirect_menuitem'))); ?>
