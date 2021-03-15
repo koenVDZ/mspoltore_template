@@ -2468,21 +2468,21 @@ form .control-group:last-of-type {
   border: 0;
 }
 .nav-tabs>li {
-  border-bottom: 2px solid #46353D;
+  border-bottom: 2px solid #FFF;
 }
 .nav-tabs>li>a {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  background-color: #816170;
+  background-color: #CB7C95;
   border: 1px solid transparent;
   color: #fff;
   padding: 8px 15px;
 }
 .nav-tabs>li>a:hover, .nav-tabs>li>a:focus, .nav-tabs>li>a:active {
-  background-color: #46353D;
+  background-color: #9F7487;
   border-color: #46353D;
-  color: #fff;
+  color: #46353D;
 }
 .nav-tabs>li>.dropdown-toggle .caret {
   border-top-color: #fff;

@@ -7,8 +7,23 @@
   font-weight: 300;
   content: "\f073";
 }
+.icon-caret-right:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  color: #231A1E;
+  content: "\f101";
+}
+li .content-links-a:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  color: #231A1E;
+  content: "\f0c1";
+}
 
 
+/*!
+ * Logon Container Flexbox addition
+ */
 
 .logon-container {
   display: flex;
@@ -58,4 +73,9 @@
 }
 .logon-btns a {
   margin-top: 12px;
+}
+.logoff-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

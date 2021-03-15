@@ -2334,6 +2334,15 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   content: "";
   line-height: 0;
 }
+li+.content-links-a a:before,
+li+.content-links-b a:before,
+li+.content-links-c a:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  color: #231A1E;
+  content: "\f0c1";
+  line-height: 0;
+}
 .nav-tabs:after, .nav-pills:after {
   clear: both;
 }
