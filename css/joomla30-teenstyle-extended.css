@@ -1216,9 +1216,9 @@ dl.article-info .article-info-term {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid #9F7487;
-  border-bottom-color: #9F7487;
-  background-color: #46353D;
+  border: 1px solid #EED3D4;
+  border-bottom-color: #EED3D4;
+  background-color: #F7EDEF;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1231,18 +1231,18 @@ dl.article-info .article-info-term {
   -moz-transition: color .25s ease-in-out;
   -o-transition: color .25s ease-in-out;
   transition: color .25s ease-in-out;
-  color: #fff;
+  color: #F7EDEF;
   text-shadow: none;
 }
 .button .caret, .btn .caret {
   border-top-color: #fff;
 }
 .button:hover, .btn:hover, .button:focus, .btn:focus, .button:active, .btn:active {
-  color: #fff;
-  background-color: #231A1E;
+  color: #CB7C95;
+  background-color: #816170;
 }
 .button:hover .caret, .btn:hover .caret, .button:focus .caret, .btn:focus .caret, .button:active .caret, .btn:active .caret {
-  border-top-color: #999;
+  border-top-color: #231A1E;
 }
 .btn.disabled, .btn[disabled] {
   color: #fff;
@@ -1287,7 +1287,7 @@ dl.article-info .article-info-term {
   text-decoration: none;
 }
 .btn-primary {
-  border-color: #816170;
+  border-color: #EED3D4;
   background-color: #816170;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -2406,28 +2406,28 @@ form .control-group:last-of-type {
   padding-top: 0;
 }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
-  background-color: #46353D;
+  background-color: #CB7C95;
   background-image: none;
   filter: none;
 }
 .dropdown-menu>.active>a {
-  background-color: #46353D;
+  background-color: #CB7C95;
   background-image: none;
   filter: none;
 }
 .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
-  background-color: #46353D;
+  background-color: #CB7C95;
   background-image: none;
   filter: none;
 }
 .dropdown-menu li.dropdown .sub-menu>li>a:hover, .dropdown-menu li.dropdown .sub-menu>li>a:focus {
-  background-color: #2a2c31;
+  background-color: #CB7C95;
 }
 .dropdown-menu li.dropdown .sub-menu>.active>a {
-  background-color: #2a2c31;
+  background-color: #CB7C95;
 }
 .dropdown-menu li.dropdown .sub-menu>.active>a:hover, .dropdown-menu li.dropdown .sub-menu>.active>a:focus {
-  background-color: #2a2c31;
+  background-color: #CB7C95;
 }
 .row-fluid .slidermanDescriptionBG, .row-fluid .slidermanDescriptionText {
   height: auto !important;
