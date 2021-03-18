@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Allura');
+
+.byhand {
+    font-family: 'Allura', cursive;
+    font-size: 2rem;
+  }
+
+.about-me_container {
+  background-color:transparent;
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-me_container > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.about-me_item {
+  color: #46353D;
+}
+
+.about-me_item p {
+  text-align: justify;
+}
+
+.about-me_item_1 {
+  background-color:transparent;
+}
+
+.about-me_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+
+.about-me_item_2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #46353D;
+  text-align: center;
+  background-color: transparent;
+}
+.about-me_byhand {
+  text-align: right;
+}
+@media all and (min-width: 240px) {
+  .about-me_image     { width: 180px;}
+}
+@media all and (min-width: 320px) {
+  .about-me_image     { width: 240px;}
+}
+
+@media all and (min-width: 420px) {
+  .about-me_image     { width: 360px;}
+}
+
+@media all and (min-width: 600px) {
+  .about-me_item { flex: 1 0 0; }
+  .about-me_image     { width: 360px;}
+}
+
+@media all and (min-width: 800px) {
+  .about-me_item_2    { flex: 3 0px; }
+  .about-me_item_1    { order: 1; } 
+  .about-me_item_2    { order: 2; }
+  .about-me_image     { width: 240px;}
+}
+
+@media all and (min-width: 1080px) {
+  .about-me_image     { width: 240px;}
+}
+.about-me_button {
+  display: inline;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #46353D;
+  border-radius: 6px;
+  line-height: 32px;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+.about-me_button a {
+  text-decoration: none;
+  color: #46353D;
+}
+.about-me_image_2 {
+  width: 60px;
+}
+.flower_heading {
+  position: relative;
+}
+.flower_heading h2 {
+  margin-top: 0;
+}
+.flower_image_corner {
+  position: absolute;
+  top: -33.333333px;
+  right: -20px;
+  width: 90px;
+}
+</style>
+
+
+<body>
+<div class="about-me_body">
+  <div class="fLower_heading">
+    <img class="flower_image_corner" src="https://marielaspoltore.com/images/logos/flower_corner_90.png" alt="Corner Flower">
+  </div>
+  <h2>UN POCO SOBRE MI</h2>
+  <div class="about-me_container">
+    <div class="about-me_item about-me_item_1">
+      <img class="about-me_image" src="https://marielaspoltore.com/images/mariela_headshot.png" alt="Mariela Spoltore Head shot">
+    </div>
+    <div class="about-me_item about-me_item_2">
+      <img class="about-me_image_2" src="https://marielaspoltore.com/images/logos/tree_flower_01_60.png" alt="Flower">
+      <p>Soy producto de las&nbsp;cuatro&nbsp;mujeres&nbsp;que habitan en mi: la doncella dominante se expresa a través
+        de mi profesión de Guía de turismo y amante de la naturaleza, viajera, buscadora sin límites. Practicante de
+        yoga desde el 2003 y Profe de Hatha y Purna Yoga.</p>
+      <p>Mi chamana es la Moon Mother, Terapeuta Menstrual, Terapeuta floral, Amante de los yuyos, los cristales, el
+        sahúmo y el tambor. Mi Madre es la que nutre todos estos proyectos y pasiones, Mi Anciana sabia es la que me
+        muestra el camino a seguir y guía mis pasos desde lo más profundo de mi corazón.</p>
+        <br>
+      <div class="byhand about-me_byhand">Mari</div>
+      <div class="about-me_button"><a href="https://marielaspoltore.com/index.php/es/sobre-mi">Continua Leyendo ...</a></div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

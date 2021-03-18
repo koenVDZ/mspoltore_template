@@ -394,6 +394,8 @@ dl.article-info dd, dl.article-info dd>div {
   width: auto;
 }
 p.img_caption {
+  margin-top: 4px;
+  border-radius: 4px;
   background: none repeat scroll 0 0 #eee;
   font-size: 0.75em;
   font-style: italic;
