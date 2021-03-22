@@ -155,7 +155,7 @@ margin: var(--gap) 0 120px var(--gap);
 }
 /* About Me Section */
 .about-me_container {
-  background-color: #fff;
+  background-color:transparent;
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
@@ -175,7 +175,7 @@ margin: var(--gap) 0 120px var(--gap);
 }
 
 .about-me_item_1 {
-  background: #fff;
+  background-color:transparent;
 }
 
 .about-me_image {
@@ -191,18 +191,40 @@ margin: var(--gap) 0 120px var(--gap);
   margin-right: auto;
   color: #46353D;
   text-align: center;
-  background: #fff;
+  background-color: transparent;
 }
 .about-me_byhand {
+  margin-bottom: 24px;
   text-align: right;
 }
-.article-image-right {
-  float: right;
-  margin: 0 0 20px 20px;
-  border-radius: 8px;
-  box-shadow: #816170;
+@media all and (min-width: 240px) {
+  .about-me_image     { width: 180px;}
+}
+@media all and (min-width: 320px) {
+  .about-me_image     { width: 240px;}
+}
+
+@media all and (min-width: 420px) {
+  .about-me_image     { width: 360px;}
+}
+
+@media all and (min-width: 600px) {
+  .about-me_item { flex: 1 0 0; }
+  .about-me_image     { width: 360px;}
+}
+
+@media all and (min-width: 800px) {
+  .about-me_item_2    { flex: 3 0px; }
+  .about-me_item_1    { order: 1; } 
+  .about-me_item_2    { order: 2; }
+  .about-me_image     { width: 240px;}
+}
+
+@media all and (min-width: 1080px) {
+  .about-me_image     { width: 240px;}
 }
 .about-me_button {
+  margin-top: 24px;
   display: inline;
   border-width: 1px;
   border-style: solid;
@@ -216,11 +238,10 @@ margin: var(--gap) 0 120px var(--gap);
   text-decoration: none;
   color: #46353D;
 }
-.about-me_button a:hover {
-  color: #F7EDEF;
-  background-color: #816170;
-}
 .about-me_image_2 {
+  margin-right: 35%;
+  margin-top: -36px;
+  margin-bottom: 24px;
   width: 60px;
 }
 .flower_heading {
@@ -231,12 +252,50 @@ margin: var(--gap) 0 120px var(--gap);
 }
 .flower_image_corner {
   position: absolute;
-  top: -33.333333px;
+  top: -33.333333px;  
   right: -20px;
   width: 90px;
 }
+/* Ebd of About Section */
+/* put logo before nav bar */
+
+#nav-toolbar > ul:before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
+  background-size: 180px 60px;
+  height: 60px;
+  width: 180px;
+  margin: 8px 24px 0 24px;
+}
+@media (max-width:979px) {
+  #toolbar > div > div > div:after {
+    display: inline-block;
+    content: ' ';
+    background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
+    background-size: 240px 80px;
+    height: 80px;
+    width: 240px;
+    margin: 0 24px 24px 24px;
+  }
+}
+@media (max-width:319px) {
+  #toolbar > div > div > div:after {
+    display: inline-block;
+    content: ' ';
+    background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_80.png');
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
+    margin: 16px 24px 8px 24px;
+  }
+}
 #featured {
   border-radius: 8px;
+}
+/* make languages visible over toolbar */
+.lang-switch {
+  right:0;
 }
 /* Header Styles */
 body {
@@ -251,6 +310,7 @@ body {
   transform: translateX(-50%) scale(.7);
   transform-origin: 50% 0; */
   padding: 8px 16px;
+  z-index:1031;
 }
 
 .header-image {

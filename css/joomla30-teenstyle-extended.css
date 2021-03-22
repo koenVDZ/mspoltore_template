@@ -2646,12 +2646,6 @@ form .control-group:last-of-type {
   float: none;
   margin-bottom: 0;
 }
-#toolbar .nav>li {
-  border-left: 1px solid #2a2c31;
-}
-#toolbar .nav>li:first-child {
-  border-left: none;
-}
 .nav li>a.action {
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
