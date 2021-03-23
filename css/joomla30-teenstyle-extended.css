@@ -2070,7 +2070,10 @@ a.wylia-readmore {
   margin-bottom: 0;
 }
 .inner-padding {
-  padding: 20px;
+  padding: 20px 0 20px 0;
+}
+#featured > div {
+  padding: 0;
 }
 #header {
   background-color: #f7edef;

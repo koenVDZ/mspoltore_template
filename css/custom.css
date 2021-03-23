@@ -181,6 +181,10 @@ margin: var(--gap) 0 120px var(--gap);
   text-align: center;
   padding: 64px 48px;
   margin-bottom: 120px;
+  @media (min-width:1064px) {
+    padding:0;
+    margin-bottom: 0;
+  }
 }
 .testimonial-item p {
   font-size: 16px;
@@ -205,6 +209,10 @@ margin: var(--gap) 0 120px var(--gap);
   margin-bottom: 32px;
 }
 /* About Me Section */
+.about-me_body {
+  margin: 20px;
+  padding: 20px 0;
+}
 .about-me_container {
   background-color:transparent;
   display: flex;  
@@ -226,6 +234,7 @@ margin: var(--gap) 0 120px var(--gap);
 }
 
 .about-me_item_1 {
+  padding-left: 0 48px;
   background-color:transparent;
 }
 
@@ -243,6 +252,7 @@ margin: var(--gap) 0 120px var(--gap);
   color: #46353D;
   text-align: center;
   background-color: transparent;
+  padding: 0 48px;
 }
 .about-me_byhand {
   margin-bottom: 24px;
@@ -303,8 +313,10 @@ margin: var(--gap) 0 120px var(--gap);
 }
 .flower_image_corner {
   position: absolute;
-  top: -33.333333px;  
-  right: -20px;
+  right: 0px;
+  top: 0px;
+  // top: -33.333333px;  
+  // right: -20px;
   width: 90px;
 }
 /* Ebd of About Section */
