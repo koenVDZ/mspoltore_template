@@ -13,13 +13,64 @@
   color: #231A1E;
   content: "\f101";
 }
-li .content-links-a:before {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 500;
-  color: #231A1E;
-  content: "\f0c1";
-}
+/*!
+* Services styling
+*/
 
+.therapies_title {
+  text-align: center;
+  padding-bottom: 48px;
+}
+.therapies_wrapper {
+  padding: 48px 0 48px 0;
+  background-color: #F7EDEF;
+}
+.therapies_flex {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap:wrap; 
+  /* flex-flow: column nowrap; */
+  text-align: center;
+  justify-content: space-around;
+}
+.therapies_item {
+  position: relative;
+  width: 250px;
+  font-size: larger;
+  text-align: center;
+  transition: all .7s ease-out;
+}
+.therapies_item:hover {
+  color: #816170;
+}
+.therapies_item:hover .therapies_image {
+  width: 250px;
+  transform: scale(1.2) rotate(2deg); 
+}
+.therapies_image {
+  padding-bottom: 32px;
+  transition: all .7s ease-out;
+  width: 250px;
+}
+.therapies_text {
+  position: absolute;
+  top: 150px; 
+  margin-left: -200px;
+  width: 150px;
+  color: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 8px;
+  border-style: solid;
+  transform: scale(1.5); 
+  }
+.therapies_item:hover .therapies_text {
+  color: #231A1E;
+  background-color: rgba(203, 124, 149, 0.4);
+  border-color: rgba(203, 124, 149, 0.4);
+  border-radius: 8px;
+  transition: all .7s .3s ease-out
+}
 
 /*!
  * Logon Container Flexbox addition
