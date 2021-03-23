@@ -262,7 +262,7 @@ margin: var(--gap) 0 120px var(--gap);
 #nav-toolbar > ul:before {
   display: inline-block;
   content: ' ';
-  background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
+  background-image: url('https://marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
   background-size: 180px 60px;
   height: 60px;
   width: 180px;
@@ -272,7 +272,7 @@ margin: var(--gap) 0 120px var(--gap);
   #toolbar > div > div > div:after {
     display: inline-block;
     content: ' ';
-    background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
+    background-image: url('https://marielaspoltore.com/images/logos/logo_mscom_fat_es.svg');
     background-size: 240px 80px;
     height: 80px;
     width: 240px;
@@ -283,7 +283,7 @@ margin: var(--gap) 0 120px var(--gap);
   #toolbar > div > div > div:after {
     display: inline-block;
     content: ' ';
-    background-image: url('https://localhost/marielaspoltore.com/images/logos/logo_mscom_80.png');
+    background-image: url('https://marielaspoltore.com/images/logos/logo_mscom_80.png');
     background-size: 80px 80px;
     height: 80px;
     width: 80px;

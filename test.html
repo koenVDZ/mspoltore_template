@@ -1,47 +1,77 @@
-<div class="wrapper-toolbar" style="min-height: 40px;">
-  <div class="wrapper-toolbar" style="min-height: 40px;">
-    <nav id="toolbar">
-      <div class="navbar navbar-fixed-top  container">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target="#nav-toolbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <div class="nav-collapse" id="nav-toolbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
 
-              <ul class="menu nav">
-                <li class="item-105 current active"><a href="/marielaspoltore.com/index.php/es/">Inicio</a></li>
-                <li class="item-147"><a href="/marielaspoltore.com/index.php/es/sobre-mi">Sobre mi</a></li>
-                <li class="item-151 deeper dropdown parent"><a href="#" class="heading dropdown-toggle">
-                    Terapias<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="item-152"><a href="/marielaspoltore.com/index.php/es/terapias/sanacion-de-utero">Sanación
-                        de útero</a></li>
-                    <li class="item-153"><a href="/marielaspoltore.com/index.php/es/terapias/terapia-menstrual">Terapia
-                        Menstrual</a></li>
-                    <li class="item-154"><a href="/marielaspoltore.com/index.php/es/terapias/terapia-floral">Terapia
-                        floral</a></li>
-                    <li class="item-155"><a href="/marielaspoltore.com/index.php/es/terapias/clases-de-yoga">Clases de
-                        Yoga</a></li>
-                  </ul>
-                </li>
-                <li class="item-134 deeper dropdown parent"><a class=" dropdown-toggle"
-                    href="/marielaspoltore.com/index.php/es/tienda2">Tienda<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="item-133"><a
-                        href="/marielaspoltore.com/index.php/es/tienda2/listado-de-categorias">Listado de categorías</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="item-116"><a href="/marielaspoltore.com/index.php/es/blog-es">Blog</a></li>
-              </ul>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
+
+
+<style>
+body {
+  margin: 0;
+}
+.therapies_title {
+  text-align: center;
+  padding-bottom: 48px;
+}
+.therapies_wrapper {
+  padding: 48px 0 48px 0;
+  background-color: #F7EDEF;
+}
+.therapies_flex {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap:wrap; 
+  /* flex-flow: column nowrap; */
+  text-align: center;
+  justify-content: space-around;
+}
+.therapies_item {
+  transition: font-size .7s ease-out;
+}
+.therapies_image {
+  transition: all .7s ease-out;
+}
+.therapies_image:hover {
+  transform: scale(1.2) rotate(2deg); 
+  background-color: #F7EDEF;
+}
+.therapies_image {
+  width: 250px;
+}
+.therapies_text {
+  transform: scale(2); 
+}
+
+</style>
+
+<div class="therapies_wrapper">
+  <h2 class="therapies_title">SERVICIOS</h2>
+  <div class="therapies_flex">
+    <div class="therapies_item">
+      <img class="therapies_image" src="https://marielaspoltore.com/images/illustration/utero_440.png" alt="">
+      <br>
+      <h4 class="therapies_text">Utero</h4>
+    </div>
+    <div class="therapies_item">
+      <img class="therapies_image" src="https://marielaspoltore.com/images/illustration/yoga_440.png" alt="">
+    </div>
+    <div class="therapies_item">
+      <img class="therapies_image" src="https://marielaspoltore.com/images/illustration/tienda_440.png" alt="">
+    </div>
+    <div class="therapies_item">
+      <img class="therapies_image" src="https://marielaspoltore.com/images/illustration/moon_440.png" alt="">
+    </div>
+    <div class="therapies_item">
+      <img class="therapies_image" src="https://marielaspoltore.com/images/illustration/bach_440.png" alt="">
+    </div>
 </div>
+
+</div>
+</body>
+</html>
