@@ -305,10 +305,18 @@ margin: var(--gap) 0 120px var(--gap);
   line-height: 32px;
   padding: 8px 16px;
   background-color: transparent;
+  transition: background-color .3s;
+}
+.about-me_button:hover {
+  background-color: #CB7C95;
 }
 .about-me_button a {
   text-decoration: none;
   color: #46353D;
+}
+.about-me_button a:hover {
+  color: #F7EDEF;
+  transition: color .3s;
 }
 .about-me_image_2 {
   margin-right: 35%;
@@ -342,6 +350,51 @@ margin: var(--gap) 0 120px var(--gap);
 }
 
 /* End of About Section */
+/* Start of arquitipes */
+.arquetipos_wrapper {
+  padding: 48px 0 48px 0;
+}
+
+.arquetipos_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: column nowrap; */
+  text-align: center;
+  justify-content: space-around;
+}
+
+.arquetipos_item {
+  position: relative;
+  width: 250px;
+  text-align: center;
+  transition: all .7s ease-out;
+}
+.arquetipos_card {
+  background-color: #F7EDEF;
+  margin: 8px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+}
+.arquetipos_card-title {
+  text-align: center;
+  border: 1px solid #816170;
+  border-radius: 4px 4px 0 0;
+  background-color: #816170;
+  color: #F7EDEF;
+  padding: 8px 8px;
+  text-transform: uppercase;
+}
+.arquetipos_card-subtitle {
+  background-color: #EED3D4;
+  color:#46353D;
+  padding: 8px;
+}
+.arquetipos_list {
+  border: 1px solid #F7EDEF;
+  border-radius: 0 0 4px 4px;
+  text-align: left;
+  padding: 16px 0;
+}
 
 /* Start of Social Icons */
 #header #top {
@@ -362,7 +415,7 @@ margin: var(--gap) 0 120px var(--gap);
 }
 .social_icons {
   position: absolute;
-  top: -80px;
+  top: -90px;
   right: 20px;
 }  
 /* End of Social Icons */
@@ -394,6 +447,80 @@ a.hikacart:focus {
 }
 .hikashop_product_quantity_change_div_plus_default {
   height: 15px;
+}
+/* General Flex */
+.general_wrapper {
+  padding: 48px 0 48px 0;
+}
+.general_title {
+  text-align: center;
+  font-size: 24px;
+  color:#816170;
+  margin-bottom: 16px;
+}
+
+.general_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: column nowrap; */
+  text-align: center;
+  justify-content: space-around;
+}
+
+.general_item {
+  position: relative;
+  width: 250px;
+  text-align: center;
+  transition: all .7s ease-out;
+}
+.general_card {
+  background-color: #F7EDEF;
+  margin: 8px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+}
+.general_card-title {
+  border: 1px solid #816170;
+  border-radius: 4px 4px 0 0;
+  background-color: #816170;
+  color: #F7EDEF;
+  padding: 8px 8px;
+  text-transform: uppercase;
+}
+.general_card-subtitle-text {
+  background-color: #F7EDEF;
+  text-align: justify;
+  color:#46353D;
+  padding: 8px 16px;
+}
+.general_card-subtitle {
+  background-color: #EED3D4;
+  color:#46353D;
+  padding: 8px;
+}
+.general_list {
+  border: 1px solid #F7EDEF;
+  border-radius: 0 0 4px 4px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.general_button {
+  display: inline;
+  padding: 8px;
+  color:#F7EDEF;
+  background-color: #816170;
+  border: 1px solid #816170;
+  border-radius: 4px;
+  transition: background-color .3s;
+}
+.general_button a {
+  color:#F7EDEF;
+  text-decoration: none;
+}
+.general_button:hover {
+  background-color: #CB7C95;
+  border: 1px solid #CB7C95;
 }
 /* put logo before nav bar */
 
