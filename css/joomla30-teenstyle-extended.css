@@ -2146,14 +2146,10 @@ div .slideTitle a:not(.btn) {
   width: auto;
 }
 #header #top {
-  border-bottom: 1px solid #46353D;
   padding-top: 0;
 }
 #header #top .module {
-  border-left: 1px solid #46353D;
   margin-bottom: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 #header #top .module>*:first-child {
   margin-top: 0;

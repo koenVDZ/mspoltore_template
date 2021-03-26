@@ -341,7 +341,60 @@ margin: var(--gap) 0 120px var(--gap);
   width: 200px;
 }
 
-/* Ebd of About Section */
+/* End of About Section */
+
+/* Start of Social Icons */
+#header #top {
+  background-color: #816170;
+  border-bottom: 0;
+}
+.social_wrapper {
+  position: relative;
+  z-index: 2000;
+}
+.social_icon {
+  color: #816170;
+  padding: 0 16px;
+  transition: all .3s;
+}
+.social_icon:hover {
+  color: #46353D;
+}
+.social_icons {
+  position: absolute;
+  top: -80px;
+  right: 20px;
+}  
+/* End of Social Icons */
+
+/* start of HikaShop Adaptations */
+.hikashop_product_price {
+  font-weight: 700;
+}
+.hikashop_product_name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #816170;
+}
+a.hikacart {
+  margin-top: 8px;
+  background-color: #816170;
+  border-color: #816170;
+}
+a.hikacart:hover {
+  background-color:#46353D ;
+  border-color: #46353D;
+}
+a.hikacart:focus {
+  background-color: #46353D;
+  border-color: #231A1E;
+}
+.hikashop_product_quantity_change_div_plus_default {
+  height: 15px;
+}
+.hikashop_product_quantity_change_div_plus_default {
+  height: 15px;
+}
 /* put logo before nav bar */
 
 #nav-toolbar > ul:before {
