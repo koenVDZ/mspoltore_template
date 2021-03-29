@@ -560,7 +560,22 @@ a.hikacart:focus {
   background-color: #CB7C95;
   border-color: #46353D;
 }
-
+/* contact button */
+.contact_button {
+  margin: 8px;
+  background-color: transparent;
+  border: 1px solid #816170;
+  padding: 8px;
+  border-radius: 8px;
+  color: #816170;
+  transition: all .5s;
+}
+.contact_button:hover {
+  background-color: #816170;
+  border: 1px solid #46353D;
+  color: #F7EDEF;
+  transform: scale(1.1);
+}
 /* General Flex */
 .general_wrapper {
   padding: 48px 0 48px 0;
