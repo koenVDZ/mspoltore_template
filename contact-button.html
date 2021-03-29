@@ -9,27 +9,57 @@
 </head>
 <body>
   <style>
-    .contact_button {
-      margin: 8px;
-      background-color: transparent;
-      border: 1px solid #816170;
-      padding: 8px;
-      border-radius: 8px;
-      color: #816170;
-      transition: all .5s;
+    .contact_buttons {
+      display: flex;
+      flex-wrap: wrap;
     }
-    .contact_button:hover {
+    .contact_button-item {
+      margin:16px;
+    }
+    .contact_button {
       background-color: #816170;
       border: 1px solid #46353D;
       color: #F7EDEF;
+      padding: 8px;
+      border-radius: 8px;
+      transition: all .5s;
+    }
+    .contact_button:hover {
+      background-color: transparent;
+      border: 1px solid #816170;
+      color: #816170;
       transform: scale(1.1);
+      cursor: grab;
+    }
+    .contact_button-anchor {
+      text-decoration: none;
     }
   </style>
+
+
   <div class="contact_buttons">
-    <div class="contact_button social_icon_uk"><i class="fal fa-envelope"></i> Send a message by eMail</div>
-    <a href="https://api.whatsapp.com/send?phone=5491157548291" target="_blank" rel="noopener noreferrer">
-      <div class="contact_button"><i class="fab fa-whatsapp"></i> Send a message through WhatsApp</div>
-    </a>
+    <div class="contact_button-item">
+      <span class="contact_button social_icon_uk"><i class="fal fa-envelope"></i> Contact me by eMail</span>
+    </div>
+    <div class="contact_button-item">
+      <a class="contact_button-anchor" href="https://api.whatsapp.com/send?phone=5491157548291" target="_blank" rel="noopener noreferrer">
+        <span class="contact_button"><i class="fab fa-whatsapp"></i> Contact me through WhatsApp</span>
+      </a>
+    </div>
   </div>
+
+
+  <div class="contact_buttons">
+    <div class="contact_button-item">
+      <span class="contact_button social_icon_es"><i class="fal fa-envelope"></i> Contactame por correo electrónico</span>
+    </div>
+    <div class="contact_button-item">
+      <a class="contact_button-anchor" href="https://api.whatsapp.com/send?phone=5491157548291" target="_blank" rel="noopener noreferrer">
+        <span class="contact_button"><i class="fab fa-whatsapp"></i> Contactame a través de WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+
 </body>
 </html>

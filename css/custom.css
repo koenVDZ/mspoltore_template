@@ -561,20 +561,30 @@ a.hikacart:focus {
   border-color: #46353D;
 }
 /* contact button */
-.contact_button {
-  margin: 8px;
-  background-color: transparent;
-  border: 1px solid #816170;
-  padding: 8px;
-  border-radius: 8px;
-  color: #816170;
-  transition: all .5s;
+.contact_buttons {
+  display: flex;
+  flex-wrap: wrap;
 }
-.contact_button:hover {
+.contact_button-item {
+  margin:16px;
+}
+.contact_button {
   background-color: #816170;
   border: 1px solid #46353D;
   color: #F7EDEF;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all .5s;
+}
+.contact_button:hover {
+  background-color: transparent;
+  border: 1px solid #816170;
+  color: #816170;
   transform: scale(1.1);
+  cursor: grab;
+}
+.contact_button-anchor {
+  text-decoration: none;
 }
 /* General Flex */
 .general_wrapper {
