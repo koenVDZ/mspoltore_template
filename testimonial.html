@@ -1,3 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<style>
+  /* Testimonial Style */
+.testimonial-title {
+  margin-bottom: 120px;
+}
+
+.testimonial-title h2 {
+  letter-spacing: 3px;
+  text-align: center;
+  color: #EED3D4;
+}
+
+.testimonial-image-container {
+  position: relative;
+}
+
+.testimonial-image {
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -120px;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 150px;
+  height: 150px;
+  border-radius: 45%;
+}
+
+.testimonial_image_2 {
+  margin-top: 28px;
+  width: 60px;
+}
+
+.testimonial-container {
+  --gap: 20px;
+  background-color: #816170;
+  display: inline-flex;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /*align-items: flex-start;*/
+  /*align-content: space-evenly;*/
+  /* display: inline-flex; */
+  margin: calc(-1 * var(--gap)) 0 120px calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.testimonial-container>* {
+  margin: var(--gap) 0 120px var(--gap);
+}
+
+.testimonial-item {
+  border-radius: 8px;
+  width: 240px;
+  /* margin: 10px; */
+  background-color: #F7EDEF;
+  text-align: center;
+  padding: 64px 48px;
+  margin-bottom: 60px;
+}
+
+@media (max-width:748px) {
+  .testimonial-item {
+    width: 100%;
+    padding: 64px 0x;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width:1064px) {
+  .testimonial-item {
+    padding: 16px 48px;
+    margin-bottom: 0;
+  }
+}
+
+.testimonial-item p {
+  font-size: 16px;
+  color: #231A1E;
+  text-align: justify;
+}
+
+.testimonial-byhand {
+  padding: 28px 0 12px 0;
+  color: #816170;
+}
+
+.testimonial-icon-top {
+  padding: 56px 0 32px 0;
+  font-size: 16px;
+  color: #816170;
+}
+
+.testimonial-icon {
+  padding: 20px 0 0 0;
+  color: #816170;
+}
+
+.testimonial-place {
+  color: #CB7C95;
+  margin-bottom: 32px;
+}
+
+
+</style>
+
 <div class="testimonial-title">
     <h2>LAS MUJERES DICEN ...</h2>
 </div>
@@ -51,3 +167,10 @@
     <div><img class="testimonial_image_2" src="https://marielaspoltore.com/images/logos/tree_flower_01_60.png" alt="Flower"></div>
   </div>
 </div>
+
+
+
+
+</body>
+</html>
+
