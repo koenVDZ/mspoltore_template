@@ -16,6 +16,12 @@
   content: "\f101";
 }
 
+.icon-pencil-paintbrush:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  color: #816170;
+  content: "\f618";
+}
 /*!
 * Services styling
 */
@@ -577,7 +583,15 @@
 }
 
 /* End of Social Icons */
-
+/* Footer */
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 12px;
+  text-align: center;
+  color: #816170;
+}
 /* start of HikaShop Adaptations */
 .hikashop_product_price {
   font-weight: 700;
