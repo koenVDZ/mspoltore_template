@@ -29,8 +29,8 @@ if($document->params->get('styleVariation', 'modern') == 'modern') {
 }
 else
 {
-    $lessCustomizationVars['@baseFontFamily']   =  '\'Lora\', serif';
-    $lessCustomizationVars['@altFontFamily']    =  '\'Lora\', serif';
+    $lessCustomizationVars['@baseFontFamily']   =  '\'Roboto Slab\', serif';
+    $lessCustomizationVars['@altFontFamily']    =  '\'Roboto Slab\', serif';
 }
 
 // Run the compiler - 'popstyle' is the default style
